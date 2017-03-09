@@ -89,19 +89,16 @@
 
 
 
-<meta name="description" content="##导入头文件宏定义的小技巧
-在iOS开发中，有些头文件（*.h）会经常在其他文件中使用,所以我们通常会创建一个全局文件（*.pch）来导入这些头文件，如果我们想要在编译阶段将头文件导入到.m文件中的话，需要用到下面这个宏定义">
+<meta name="description" content="在iOS开发中，有些头文件（*.h）会经常在其他文件中使用,所以我们通常会创建一个全局文件（*.pch）来导入这些头文件，如果我们想要在编译阶段将头文件导入到.m文件中的话，需要用到下面这个宏定义">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于导入头文件的一个宏定义">
 <meta property="og:url" content="https://csw06.github.io/2017/03/09/关于导入头文件的一个宏定义/index.html">
 <meta property="og:site_name" content="SureWin">
-<meta property="og:description" content="##导入头文件宏定义的小技巧
-在iOS开发中，有些头文件（*.h）会经常在其他文件中使用,所以我们通常会创建一个全局文件（*.pch）来导入这些头文件，如果我们想要在编译阶段将头文件导入到.m文件中的话，需要用到下面这个宏定义">
-<meta property="og:updated_time" content="2017-03-09T07:05:01.000Z">
+<meta property="og:description" content="在iOS开发中，有些头文件（*.h）会经常在其他文件中使用,所以我们通常会创建一个全局文件（*.pch）来导入这些头文件，如果我们想要在编译阶段将头文件导入到.m文件中的话，需要用到下面这个宏定义">
+<meta property="og:updated_time" content="2017-03-09T07:12:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于导入头文件的一个宏定义">
-<meta name="twitter:description" content="##导入头文件宏定义的小技巧
-在iOS开发中，有些头文件（*.h）会经常在其他文件中使用,所以我们通常会创建一个全局文件（*.pch）来导入这些头文件，如果我们想要在编译阶段将头文件导入到.m文件中的话，需要用到下面这个宏定义">
+<meta name="twitter:description" content="在iOS开发中，有些头文件（*.h）会经常在其他文件中使用,所以我们通常会创建一个全局文件（*.pch）来导入这些头文件，如果我们想要在编译阶段将头文件导入到.m文件中的话，需要用到下面这个宏定义">
 
 
 
@@ -407,9 +404,9 @@
       
 
       
-        <p>##导入头文件宏定义的小技巧</p>
-<p>在iOS开发中，有些头文件（*.h）会经常在其他文件中使用,所以我们通常会创建一个全局文件（*.pch）来导入这些头文件，如果我们想要在编译阶段将头文件导入到.m文件中的话，需要用到下面这个宏定义</p>
+        <p>在iOS开发中，有些头文件（*.h）会经常在其他文件中使用,所以我们通常会创建一个全局文件（*.pch）来导入这些头文件，如果我们想要在编译阶段将头文件导入到.m文件中的话，需要用到下面这个宏定义</p>
 <a id="more"></a>
+<p>###导入头文件宏定义的小技巧</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#ifdef __OBJC__</div><div class="line"></div><div class="line">//在该宏中的所有头文件都会被拷贝到.m文件中</div><div class="line">#import &quot;xxx.h&quot;</div><div class="line">#import &lt;xxx/xxx.h&gt;</div><div class="line"></div><div class="line"></div><div class="line">#endif</div></pre></td></tr></table></figure>
 <p>使用该宏定义可以将.h文件拷贝到.m文件中，可以避免.h文件过于冗余</p>
 
