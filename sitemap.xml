@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://csw06.github.io/2019/05/13/homebrew%E7%9A%84%E7%94%A8%E6%B3%95/</loc>
+    
+    <lastmod>2019-05-13T12:29:36.062Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://csw06.github.io/2017/05/01/python%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2017-05-01T06:46:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://csw06.github.io/2017/03/09/%E5%85%B3%E4%BA%8E%E5%AF%BC%E5%85%A5%E5%A4%B4%E6%96%87%E4%BB%B6%E7%9A%84%E4%B8%80%E4%B8%AA%E5%AE%8F%E5%AE%9A%E4%B9%89/</loc>
     
     <lastmod>2017-03-09T07:16:07.000Z</lastmod>
@@ -9,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://csw06.github.io/2017/03/08/hello-world/</loc>
+    <loc>https://csw06.github.io/2017/03/09/hello-world/</loc>
     
     <lastmod>2017-03-09T07:00:56.000Z</lastmod>
     
