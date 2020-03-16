@@ -89,14 +89,14 @@
 
 
 
-<meta name="description" content="@TOC 第一个Go程序-hello,world!国际惯例，编写第一个程序，首先打印“hello,world!”。 1234567package mainimport &quot;fmt&quot;func main()&amp;#123;	fmt.Println(&quot;hello,world!&quot;)&amp;#125; 程序基本结构： 123456package &#x2F;&#x2F;包声明import &#x2F;&#x2F;包导入func main()&amp;#123; &#x2F;&#x2F;">
+<meta name="description" content="@TOC 第一个Go程序-hello,world!国际惯例，编写第一个程序，首先打印“hello,world!”。 1234567package mainimport &quot;fmt&quot;func main()&amp;#123;	fmt.Println(&quot;hello,world!&quot;)&amp;#125;  程序基本结构： 123456package &#x2F;&#x2F;包声明import &#x2F;&#x2F;包导入func main()&amp;#123; &#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GoLang基础">
 <meta property="og:url" content="https://csw06.github.io/2020/03/17/GoLang%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="SureWin">
-<meta property="og:description" content="@TOC 第一个Go程序-hello,world!国际惯例，编写第一个程序，首先打印“hello,world!”。 1234567package mainimport &quot;fmt&quot;func main()&amp;#123;	fmt.Println(&quot;hello,world!&quot;)&amp;#125; 程序基本结构： 123456package &#x2F;&#x2F;包声明import &#x2F;&#x2F;包导入func main()&amp;#123; &#x2F;&#x2F;">
+<meta property="og:description" content="@TOC 第一个Go程序-hello,world!国际惯例，编写第一个程序，首先打印“hello,world!”。 1234567package mainimport &quot;fmt&quot;func main()&amp;#123;	fmt.Println(&quot;hello,world!&quot;)&amp;#125;  程序基本结构： 123456package &#x2F;&#x2F;包声明import &#x2F;&#x2F;包导入func main()&amp;#123; &#x2F;">
 <meta property="article:published_time" content="2020-03-16T18:08:49.039Z">
-<meta property="article:modified_time" content="2020-03-16T18:18:36.031Z">
+<meta property="article:modified_time" content="2020-03-16T18:20:29.964Z">
 <meta property="article:author" content="SureWin Chan">
 <meta property="article:tag" content="golang">
 <meta property="article:tag" content="基础">
@@ -409,8 +409,10 @@
         <p>@<a href="GoLang基础">TOC</a></p>
 <h2 id="第一个Go程序-hello-world"><a href="#第一个Go程序-hello-world" class="headerlink" title="第一个Go程序-hello,world!"></a>第一个Go程序-hello,world!</h2><p>国际惯例，编写第一个程序，首先打印“hello,world!”。</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	fmt.Println(<span class="string">"hello,world!"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>程序基本结构：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> <span class="comment">//包声明</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="comment">//包导入</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123; <span class="comment">//入口函数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>OK，一行一行来。</p>
 <ul>
 <li>package关键字定义一个叫main 的包，main包是个特殊的包，程序的入口就在这个包。</li>
