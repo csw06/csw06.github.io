@@ -419,7 +419,9 @@
 <li>package关键字定义一个叫main 的包，main包是个特殊的包，程序的入口就在这个包。</li>
 <li>import关键字用来导入程序中使用到的外部包。</li>
 <li>func 是用来声明函数的，main函数是程序的入口函数。</li>
-<li>fmt是go内置的一个包，fmt.println()函数打印输出并在末尾自动换行。<h2 id="变量和常量"><a href="#变量和常量" class="headerlink" title="变量和常量"></a>变量和常量</h2><h3 id="标识符和关键字"><a href="#标识符和关键字" class="headerlink" title="标识符和关键字"></a>标识符和关键字</h3><h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4></li>
+<li>fmt是go内置的一个包，fmt.println()函数打印输出并在末尾自动换行。</li>
+</ul>
+<h2 id="变量和常量"><a href="#变量和常量" class="headerlink" title="变量和常量"></a>变量和常量</h2><h3 id="标识符和关键字"><a href="#标识符和关键字" class="headerlink" title="标识符和关键字"></a>标识符和关键字</h3><h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4><ul>
 <li>在编程语言中标识符就是程序员定义的具有特殊意义的词，比如变量名、常量名、函数名等等。 Go语言中标识符由字母数字和_(下划线）组成，并且只能以字母和_开头。举个栗子，_a123, abc, a_4等等。</li>
 </ul>
 <h4 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h4><ul>
@@ -471,7 +473,10 @@
 </ol>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> hp = <span class="number">100</span></span><br></pre></td></tr></table></figure>
 
-<p> 举一堆栗子：<br> <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> attack = <span class="number">40</span></span><br><span class="line"><span class="keyword">var</span> defence = <span class="number">20</span></span><br><span class="line"><span class="keyword">var</span> damageRate <span class="keyword">float32</span> = <span class="number">0.17</span></span><br><span class="line"><span class="keyword">var</span> damage = <span class="keyword">float32</span>(attack -defence) * damageRate</span><br><span class="line">fmt.Println(damage)</span><br></pre></td></tr></table></figure><br> 4. 短变量声明及初始化<br> 一种更为简洁的写法，在开发中使用比较普遍。</p>
+<p> 举一堆栗子：<br> <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> attack = <span class="number">40</span></span><br><span class="line"><span class="keyword">var</span> defence = <span class="number">20</span></span><br><span class="line"><span class="keyword">var</span> damageRate <span class="keyword">float32</span> = <span class="number">0.17</span></span><br><span class="line"><span class="keyword">var</span> damage = <span class="keyword">float32</span>(attack -defence) * damageRate</span><br><span class="line">fmt.Println(damage)</span><br></pre></td></tr></table></figure></p>
+<ol start="3">
+<li>短变量声明及初始化<br>一种更为简洁的写法，在开发中使用比较普遍。</li>
+</ol>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hp := <span class="number">10</span></span><br></pre></td></tr></table></figure>
 
 <p> 如果hp已经被声明过，但依然使用“:=”时编译器会报错。</p>
