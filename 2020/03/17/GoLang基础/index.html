@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="SureWin">
 <meta property="og:description" content="@TOC 第一个Go程序-hello,world!国际惯例，编写第一个程序，首先打印“hello,world!”。 1234567package mainimport &quot;fmt&quot;func main()&amp;#123;	fmt.Println(&quot;hello,world!&quot;)&amp;#125;  程序基本结构： 123456package &#x2F;&#x2F;包声明import &#x2F;&#x2F;包导入func main()&amp;#123; &#x2F;">
 <meta property="article:published_time" content="2020-03-16T18:08:49.039Z">
-<meta property="article:modified_time" content="2020-03-16T18:20:29.964Z">
+<meta property="article:modified_time" content="2020-03-16T18:21:32.741Z">
 <meta property="article:author" content="SureWin Chan">
 <meta property="article:tag" content="golang">
 <meta property="article:tag" content="基础">
@@ -443,8 +443,10 @@
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> 变量名 变量类型</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><p>变量声明以关键字var开头，变量类型放在变量的后面，行尾无需分号。</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age <span class="keyword">int</span></span><br><span class="line"><span class="keyword">var</span> name <span class="keyword">string</span></span><br></pre></td></tr></table></figure></li>
+<li>变量声明以关键字var开头，变量类型放在变量的后面，行尾无需分号。</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age <span class="keyword">int</span></span><br><span class="line"><span class="keyword">var</span> name <span class="keyword">string</span></span><br></pre></td></tr></table></figure>
+<ul>
 <li><p>批量声明</p>
 </li>
 <li><p>每次声明变量都要写<em>var</em>关键字十分繁琐，Go还支持变量的批量声明：</p>
